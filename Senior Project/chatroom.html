@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Shwap</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="menu_style.css">
+
+    </head>
+    <body>
+        <header>
+            <img class="banner" src="https://cdn.dribbble.com/users/1081586/screenshots/3328996/media/23aea33a853d8abbabb401a862524f3e.gif">
+
+                <!--        Menu        -->
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <li>Category</li>
+                            <li>  </li>
+                            <a href="News.html" target="_parent">
+                                <li>News</li>
+                            </a>
+                            <a href="Top.html" target="_parent">
+                                <li>Top</li>
+                            </a>
+                            <a href="Bottom.html" target="_parent">
+                                <li>Bottom</li>
+                            </a>
+                            <a href="Outer.html" target="_parent">
+                                <li>Outer</li>
+                            </a>
+                            <a href="Braces.html" target="_parent">
+                                <li>Braces</li>
+                            </a>
+                            <a href="Accessory.html" target="_parent">
+                                <li>Accessory</li>
+                            </a>
+                            <a href="Bag.html" target="_parent">
+                                <li>Bag</li>
+                            </a>
+                            <a href="Shoes.html" target="_parent">
+                                <li>Shoes</li>
+                            </a>
+                        </ul>
+                    </div>
+
+            
+            <a class="logo" href="main.html">Shwap</a>
+
+            <!-- 搜尋欄 -->
+            <div class="search">
+                <form>
+                    <input type="text" placeholder="Search">
+                </form>
+            </div>
+
+            <div class="toggle"></div>
+            <nav>
+                <ul>
+                    <li><a class="swap_button" href="swap.html"><ion-icon name="swap-horizontal-sharp"></ion-icon></a></li>
+                    <li><a class="favorite_button" href="#"><ion-icon name="heart-sharp"></ion-icon></a></li>
+                    <li><a class="shoppingbag_button" href="shoppingbag.html"><ion-icon name="bag-handle-sharp"></ion-icon></a></li>
+                    <li><a class="chatroom_button" href="chatroom.html"><ion-icon name="chatbubble-ellipses-sharp"></ion-icon></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--        內容        -->
+        <section>
+            <a class="nav-link"><img src="./img/Chatroom.png"></a>
+            
+        </section>
+
+        <script>
+            window.addEventListener("scroll", function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+            });
+
+            const navigation = document.querySelector('nav');
+
+            document.querySelector('.toggle').onclick = function(){
+                this.classList.toggle('active');
+
+                navigation.classList.toggle('active')
+            }
+
+        </script>
+        <!-- 載入https://ionic.io/ionicons的網站model鏈結 -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>
